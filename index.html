@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Personal Portfolio Website</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/5ad0b15baf.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div id="header">
+            <div class="container">
+                <nav>
+                    <!-- <img src="logo1.png" class="logo"> -->
+                     <p class="logo"><span>I</span>tishree.</p>
+                    <ul id="sidemenu">
+                        <li><a href="#header">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <i class="fas fa-times" onclick="closemenu()"></i>
+                    </ul>
+                    <i class="fas fa-bars" onclick="openmenu()"></i>
+                </nav>
+                <div class="header-text">
+                    <p>Web Developer</p>
+                    <h1>Hi, I'm <span>Itishree </span><br>Sahoo From India</h1>
+                </div>
+            </div>
+        </div>
+        <!-- -----------------------about------------------------->
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="user1.png" >
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="sub-title">About Me</h1>
+                        <p>Passionate web developer with expertise in front-end and back-end technologies. Focused on creating user-friendly, responsive, and scalable websites. Committed to delivering innovative and efficient digital solutions.</p>
+
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                        </div>
+
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>Programming Languages</span><br>Java, C Programming</li>
+                                <li><span>Development Tools</span><br>Postman, VS Code</li>
+                                <li><span>Backend</span><br>Node js, Express js</li>
+                                <li><span>Frontend</span><br>React js, HTML5, CSS3, Javascript</li>
+                                <li><span>Databases</span><br>MySQL, MongoDB</li>
+                                <li><span>Others</span><br>Github</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>2023-2025</span><br>MCA From Gandhi Institute For Technology</li>
+                                <li><span>2020-2023</span><br>Bsc Computer Science From Udayanath Autonomous College</li>
+                                <li><span>2018-2020</span><br>Intermediate From Kalinga Bharati Residential College</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+<!-- ----------------------services----------------------- -->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fas fa-code"></i>
+                <h2>Web Design</h2>
+                <p>I am a skilled web designer with experience in creating visually appealing and user-friendly websites. I specialize in responsive design and front-end development to enhance online user experiences.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-crop"></i>
+                <h2>Frontend Developer</h2>
+                <p>I am a frontend developer specializing in creating interactive, responsive, and user-friendly websites. Proficient in HTML, CSS, JavaScript, and frameworks like React, I focus on delivering seamless web experiences.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-app-store"></i>
+                <h2>Painter</h2>
+                <p>I am a passionate painter, specializing in various mediums such as oil, acrylic, and watercolor. My work focuses on capturing emotion, beauty, and stories through vivid, expressive artwork.</p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- -----------------------portfolio----------------------- -->
+ <div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="work-1.png">
+                <div class="layer">
+                    <h3>Food Delivery app</h3>
+                    <p>A food delivery app allows users to order meals from local restaurants, offering convenience, variety, and quick service through an easy-to-use platform with real-time tracking and secure payment options.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="work-2.png">
+                <div class="layer">
+                    <h3>Pet Shop app</h3>
+                    <p>A pet shop app enables users to browse and purchase pet products, food, and accessories. It offers convenience, fast delivery, and expert advice, ensuring pets' needs are met effortlessly.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="work-3.png">
+                <div class="layer">
+                    <h3>Online Shopping app</h3>
+                    <p>An online shopping app lets users browse, compare, and purchase products across various categories. It offers convenience, secure payment options, fast delivery, and personalized recommendations, enhancing the shopping experience.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+ </div>
+ <!-- ---------------------contact--------------------- -->
+  <div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>itishrees977@gmail.com</p>
+                <p><i class="fa-solid fa-square-phone"></i>7848923525</p>
+                <div class="social-icons">
+                    <a href="https://facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://twitter.com/"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/invites/contact/?igsh=j53jxnpflatr&utm_content=hxufdgi"><i class="fa-brands fa-square-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/itishree-sahoo-662a59251/"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="my cv.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form>
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>@ 2025 Itishree Sahoo. All Rights Reserved <i class="fa-solid fa-heart"></i>. </p>
+    </div>
+  </div>
+
+        <script>
+            var tablinks = document.getElementsByClassName("tab-links");
+            var tabcontents = document.getElementsByClassName("tab-contents");
+            function opentab(tabname){
+                for(tablink of tablinks){
+                    tablink.classList.remove("active-link");
+                }
+                for(tabcontent of tabcontents){
+                    tabcontent.classList.remove("active-tab");
+                }
+                event.currentTarget.classList.add("active-link");
+                document.getElementById(tabname).classList.add("active-tab")
+            }
+        </script>
+
+        <script>
+            var sidemenu = document.getElementById("sidemenu");
+            function openmenu(){
+                sidemenu.style.right = "0";
+            }
+            function closemenu(){
+                sidemenu.style.right = "-200px";
+            }
+        </script>
+    </body>
+</html>

@@ -143,17 +143,16 @@ portrait one: 1000px collapses that hero into a single column, so the shot shows
 layout no visitor on a laptop ever sees. And keep `--virtual-time-budget`, or the
 shot can land before webfonts and entrance animations have settled.
 
-The card media is 16:10, so the real captures (`work-3`, `work-6`) are the top 16:10
-slice of the full-width shot, which frames the hero or report card without cropping
-awkwardly. Regenerate the `-800` variant afterwards; the work sources only need that
-one size, since the cards never load them larger.
+The card media is 16:10, so a real capture is the top 16:10 slice of the full-width
+shot, which frames the hero or report card without cropping awkwardly. Regenerate the
+`-800` variant afterwards; the work sources only need that one size, since the cards
+never load them larger.
 
-`work-1`, `work-2`, `work-4` and `work-5` are licensed stock from the Pexels image
-CDN, cropped to 16:10 centred and given a flat dark wash (14 to 24 percent) so light
-photos do not clash with the dark cards. They were picked by sampling each candidate's
-average pixel colour and brightness rather than by filename, since the theme match
-matters less than not fighting the card. The Pexels license permits commercial use
-with no attribution, so nothing needs crediting on the page.
+The `work-*-800.jpg` card images are cropped to 16:10 centred and given a flat dark
+wash so light photos do not clash with the dark cards. Most are licensed stock from
+the Pexels image CDN (commercial use, no attribution required). The Ooruly card
+(`work-ooruly-800.jpg`) is a CC BY / CC BY-SA Vidhana Soudha photo from Wikimedia
+Commons, so keep that attribution in mind if you reuse it elsewhere.
 
 ### Notes on decisions worth keeping
 
@@ -185,27 +184,29 @@ and the form has real labels, inline validation and an `aria-live` status region
 Full WCAG conformance has not been verified; that needs manual testing with
 assistive technology.
 
-### Work remaining
+### Selected Projects
 
-- Selected Projects holds six cards, in this order:
-  [order-saga](https://github.com/Jagdish1998/order-saga),
-  [sql-guard-mcp](https://github.com/Jagdish1998/sql-guard-mcp),
-  [linkedin-optimiser](https://github.com/Jagdish1998/linkedin-optimiser),
+- Six cards, in this order:
   [llm-gateway](https://github.com/Jagdish1998/llm-gateway),
-  [job-tracker](https://github.com/Jagdish1998/job-tracker) and this site.
+  [rag-forge](https://github.com/Jagdish1998/rag-forge),
+  [linkedin-optimiser](https://github.com/Jagdish1998/linkedin-optimiser),
+  [ooruly](https://github.com/Jagdish1998/ooruly),
+  [order-saga](https://github.com/Jagdish1998/order-saga) and
+  [sql-guard-mcp](https://github.com/Jagdish1998/sql-guard-mcp).
 - Cards are a landscape media area (16:10) over a solid body: title, description,
   chips and links on a real surface, not text on a scrim. Links are always visible,
   not hover-gated, and the live-demo link carries `class="is-demo"` for accent.
-- Cards are ordered deployed-first: LLM Gateway, RAG Forge and LinkedIn Optimiser
-  (all with a live demo) lead, then the source-only three. Row one is all clickable.
-- All six card images are 16:10 licensed Pexels stock (free for commercial use, no
-  attribution required), thematically matched to each project and darkened to sit in
-  the dark card frame. Stock is decoration, not proof: replace each with a screenshot
-  of the running app when you can. The unused `work-3*` files are the old LinkedIn
-  Optimiser capture, kept in case that card goes back to a real screenshot.
-- linkedin-optimiser and llm-gateway have live demo links (the latter hosted on
-  Render's free tier, so it cold-starts after idle). order-saga, sql-guard-mcp and
-  job-tracker still need deploying before they can carry one.
+- Cards are ordered deployed-first: LLM Gateway, RAG Forge, LinkedIn Optimiser and
+  Ooruly (all with a live demo) lead, then the source-only two. The visible rows
+  open with clickable, live cards.
+- Card images are 16:10, cropped centred and darkened to sit in the dark card frame.
+  Most are licensed Pexels stock (free for commercial use, no attribution required);
+  the Ooruly card uses a CC-licensed Vidhana Soudha photo from Wikimedia Commons.
+  Stock is decoration, not proof: replace each with a screenshot of the running app
+  when you can.
+- LLM Gateway, RAG Forge, LinkedIn Optimiser and Ooruly have live demo links (LLM
+  Gateway runs on Render's free tier, so it cold-starts after idle). order-saga and
+  sql-guard-mcp still need deploying before they can carry one.
 - `og:url` and `og:image` in `index.html` need the final deployed URL.
 - Font Awesome ships about 273KB of webfonts for 24 icons; inline SVG would be
   the largest remaining performance win.

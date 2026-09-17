@@ -572,7 +572,7 @@
             var from = (form.elements['Email'].value || '').trim();
             var subject = 'Portfolio enquiry' + (name ? ' from ' + name : '');
             var lines = body + (from ? '\n\n-- \n' + name + '\n' + from : '');
-            mailto.href = 'mailto:jagdish.cet.edu@gmail.com'
+            mailto.href = 'mailto:itishrees977@gmail.com'
                 + '?subject=' + encodeURIComponent(subject)
                 + '&body=' + encodeURIComponent(lines);
             fallback.hidden = false;
